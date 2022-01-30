@@ -17,6 +17,12 @@ body {
     --dark-main-color: #a32727;
 }
 
+/* ------------------------------- Genral styles ------------------------------- */
+
+.margin-right-sm {
+    margin-right: 1.2rem;
+}
+
 /* ------------------------------- Header ------------------------------- */
 
 header {
@@ -32,20 +38,48 @@ header {
 .logo {
     font-family: Pacifico, cursive;
     font-weight: normal;
-    font-size: 4.8rem;
+    font-size: 3.2rem;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
     letter-spacing: -0.015rem;
 
     color: #ffffff;
+}
+
+.nav-main ul {
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.nav-main li a:link,
+.nav-main li a:visited {
+    width: 9rem;
+
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    transition: all 200ms;
+}
+
+.nav-main li a:hover {
+    font-weight: bold;
+    transform: scale(1.1);
 }
 
 /* ------------------------------- Hero banner ------------------------------- */
 
 .hero-section {
     background-color: var(--main-color);
+
+    padding: 0 0 6rem 0;
 }
 
 .hero-flex {
@@ -59,9 +93,7 @@ header {
     padding: 2.4rem;
 }
 
-h1 {
-    display: inline-block;
-    width: 50%;
+.hero-header {
     font-style: normal;
     font-weight: bold;
     font-size: 6.4rem;
@@ -71,62 +103,60 @@ h1 {
     color: #ffffff;
 }
 
+.hero-text {
+    margin-top: 3rem;
+    font-size: 2.4rem;
+    color: #f0e7e7;
+}
+
 .heart {
     fill: var(--dark-main-color);
     transform: rotate(10.12deg);
 
-    max-width: 30%;
+    max-width: 40%;
 }
 
-.nav-main ul {
-    list-style: none;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.4rem;
-}
-
-.nav-main li a:link,
-.nav-main li a:visited {
-    color: white;
-    font-size: 24px;
-    line-height: 24px;
-    text-align: center;
-    text-decoration: none;
-}
-
-header li a:hover {
-    font-weight: bold;
-    font-size: 26px;
-}
-
-.download-title {
-    background-color: var(--dark-main-color);
-    border: none;
-    border-radius: 15px;
+.hero-download-button-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-    width: 237px;
-    height: 77px;
+    gap: 3rem;
+
+    margin-top: 8rem;
 }
 
-.download-title p {
+.btn {
+    background-color: var(--dark-main-color);
+
+    border: none;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.4rem;
+
+    padding: 1.8rem;
+
+    cursor: pointer;
+
+    transition: background-color 300ms;
+}
+
+.btn:hover {
+    background-color: #902424;
+}
+
+.btn p {
     font-family: Montserrat, sans-serif;
-    font-weight: bold;
+    font-weight: 600;
     color: white;
-    font-size: 24px;
+    font-size: 1.8rem;
     letter-spacing: -0.055em;
 }
 
-.download-button-container {
-    display: flex;
-    flex-direction: row;
-    gap: 5em;
-    margin-top: 3rem;
+.download-icon {
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 /* ------------------------------- Functions Section ------------------------------- */
