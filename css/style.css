@@ -119,7 +119,8 @@ header {
 
 .hero-text {
     margin-top: 3rem;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    line-height: 1.8;
     color: var(--medium-grey-color);
 }
 
@@ -175,13 +176,44 @@ header {
 
 /* ------------------------------- Functions Section ------------------------------- */
 
-.functions {
-    display: flex;
-    justify-content: space-between;
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
-.function {
+.feature-icon {
+    width: 3.6rem;
+    height: 3.6rem;
+
+    margin-bottom: 2rem;
+
+    color: var(--dark-main-color);
+
+    background-color: var(--main-color);
+    border-radius: 50%;
+
+    padding: 1.8rem;
+}
+
+.feature {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: 75%;
+
+    text-align: center;
+}
+
+.feature-title {
+    font-size: 2rem;
+    font-weight: 600;
+
+    margin-bottom: 0.6rem;
+}
+
+.feature-text {
+    font-size: 1.6rem;
 }
