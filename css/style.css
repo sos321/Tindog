@@ -13,14 +13,23 @@ body {
 }
 
 :root {
-    --main-color: #ef4b4b;
-    --dark-main-color: #a32727;
+    --main-color: #f6e9e9;
+    --dark-main-color: #ac3d3d;
+    --dark-grey-color: #212529;
+    --medium-grey-color: #495057;
 }
 
 /* ------------------------------- Genral styles ------------------------------- */
 
 .margin-right-sm {
     margin-right: 1.2rem;
+}
+
+.container {
+    width: 120rem;
+
+    margin: 0 auto;
+    padding: 8rem 0;
 }
 
 /* ------------------------------- Header ------------------------------- */
@@ -42,7 +51,12 @@ header {
 
     letter-spacing: -0.015rem;
 
-    color: #ffffff;
+    color: var(--dark-grey-color);
+}
+
+.logo span {
+    font-size: 105%;
+    color: var(--dark-main-color);
 }
 
 .nav-main ul {
@@ -58,7 +72,7 @@ header {
 .nav-main li a:visited {
     width: 9rem;
 
-    color: white;
+    color: var(--dark-grey-color);
     font-size: 1.8rem;
     text-decoration: none;
 
@@ -79,12 +93,12 @@ header {
 .hero-section {
     background-color: var(--main-color);
 
-    padding: 0 0 6rem 0;
+    padding: 0 0 8rem 0;
 }
 
 .hero-flex {
     display: flex;
-    justify-content: center;
+    gap: 4.8rem;
     align-items: center;
 
     max-width: 70%;
@@ -95,18 +109,18 @@ header {
 
 .hero-header {
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 6.4rem;
     line-height: 111.4%;
     letter-spacing: -0.055em;
 
-    color: #ffffff;
+    color: var(--dark-grey-color);
 }
 
 .hero-text {
     margin-top: 3rem;
     font-size: 2.4rem;
-    color: #f0e7e7;
+    color: var(--medium-grey-color);
 }
 
 .heart {
@@ -162,12 +176,11 @@ header {
 /* ------------------------------- Functions Section ------------------------------- */
 
 .functions {
-    padding: 150px 200px 150px 200px;
     display: flex;
     justify-content: space-between;
 }
 
-.fun {
+.function {
     display: flex;
     flex-direction: column;
     align-items: center;
