@@ -25,11 +25,20 @@ body {
     margin-right: 1.2rem;
 }
 
+.margin-top-sm {
+    margin-top: 1rem;
+}
+
 .container {
     width: 120rem;
 
     margin: 0 auto;
     padding: 8rem 0;
+}
+
+.heading-secondary {
+    font-size: 4rem;
+    color: var(--dark-grey-color);
 }
 
 /* ------------------------------- Header ------------------------------- */
@@ -107,7 +116,7 @@ header {
     padding: 2.4rem;
 }
 
-.hero-header {
+.hero-heading {
     font-style: normal;
     font-weight: 700;
     font-size: 6.4rem;
@@ -148,7 +157,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.4rem;
+    gap: 1rem;
 
     padding: 1.8rem;
 
@@ -216,4 +225,27 @@ header {
 
 .feature-text {
     font-size: 1.6rem;
+}
+
+/* ------------------------------- Pricing Section ------------------------------- */
+
+.pricing-text {
+    font-size: 1.8rem;
+    color: var(--medium-grey-color);
+}
+
+.pricing-option {
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    text-transform: uppercase;
+    color: var(--dark-grey-color);
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.price-features {
+    list-style: none;
 }
