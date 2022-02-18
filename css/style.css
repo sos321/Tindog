@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-    width: 120rem;
+    max-width: 120rem;
 
     margin: 0 auto;
     padding: 8rem 0;
@@ -331,4 +331,12 @@ header {
     font-weight: 500;
 
     margin-bottom: 5rem;
+}
+
+.tax-text {
+    margin-top: 2.4rem;
+
+    font-size: 1.2rem;
+
+    text-align: center;
 }
