@@ -15,6 +15,7 @@ body {
 :root {
     --main-color: #f6e9e9;
     --dark-main-color: #ac3d3d;
+    --lighter-main-color: #bd6464;
     --dark-grey-color: #212529;
     --medium-grey-color: #495057;
 }
@@ -39,6 +40,20 @@ body {
 .heading-secondary {
     font-size: 4rem;
     color: var(--dark-grey-color);
+}
+
+.link:visited,
+.link:link {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: 600;
+
+    padding: 1.2rem 2.4rem;
+
+    border-radius: 11px;
+
+    background-color: var(--lighter-main-color);
 }
 
 /* ------------------------------- Header ------------------------------- */
@@ -232,20 +247,88 @@ header {
 .pricing-text {
     font-size: 1.8rem;
     color: var(--medium-grey-color);
+
+    margin-bottom: 4.8rem;
 }
 
-.pricing-option {
+.plan-options {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 2.4rem;
+}
+
+.plan-option {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+
+    border: 5px solid var(--lighter-main-color);
+    border-radius: 11px;
+
+    max-width: 25rem;
+
+    transition: all 500ms;
 }
 
-.price {
-    text-transform: uppercase;
+.plan-option:hover {
+    transform: translateY(-1rem);
+}
+
+.darker-plan-option {
+    border: 5px solid var(--dark-main-color);
+}
+
+.darker-plan-option .link,
+.darker-plan-option .plan-title {
+    background-color: var(--dark-main-color);
+}
+
+.plan-text-holder {
+    padding: 1.8rem 2.4rem;
+    margin-bottom: 2.4rem;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.price,
+.dolar-sign {
     color: var(--dark-grey-color);
-    font-size: 3rem;
     font-weight: 600;
 }
 
-.price-features {
+.price {
+    font-size: 3rem;
+
+    margin-bottom: 1.8rem;
+}
+
+.dolar-sign {
+    font-size: 2.4rem;
+    margin-right: 0.2rem;
+}
+
+.plan-title {
+    background-color: var(--lighter-main-color);
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 600;
+
+    padding: 1.8rem 1.2rem;
+
+    text-align: center;
+}
+
+.plan-features {
     list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+
+    margin-bottom: 5rem;
 }
