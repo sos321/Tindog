@@ -360,3 +360,32 @@ header {
 
     text-align: center;
 }
+
+/* ------------------------------- CTA Section ------------------------------- */
+.container--cta {
+    background-color: var(--dark-main-color);
+
+    border-radius: 10px;
+}
+
+.heading--CTA {
+    color: white;
+    text-align: center;
+}
+
+.btn-container-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    margin-top: 2.4rem;
+}
+
+.btn--cta {
+    background-color: #a32727;
+}
+
+.btn--cta:hover {
+    background-color: #6f0d0d;
+}
