@@ -20,7 +20,7 @@ body {
     --medium-grey-color: #495057;
 }
 
-/* ------------------------------- Genral styles ------------------------------- */
+/* ------------------------------- General styles ------------------------------- */
 
 .margin-right-sm {
     margin-right: 1.2rem !important;
@@ -270,6 +270,9 @@ header {
 }
 
 /* ------------------------------- Pricing Section ------------------------------- */
+.pricing {
+    padding-bottom: 4rem;
+}
 
 .plan-options {
     display: flex;
@@ -361,6 +364,42 @@ header {
     text-align: center;
 }
 
+/* ------------------------------- Reviews Section ------------------------------- */
+.reviews-section {
+    padding: 0 0 4rem 0;
+}
+
+.reviews-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+
+.review-img {
+    object-fit: cover;
+
+    width: 7.5rem;
+    height: 7.5rem;
+
+    border-radius: 50px;
+
+    margin-bottom: 1.6rem;
+}
+
+.review-text {
+    font-size: 1.8rem;
+
+    margin-bottom: 1.2rem;
+}
+
+.review-author {
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    margin-bottom: 1.2rem;
+}
+
 /* ------------------------------- CTA Section ------------------------------- */
 .container--cta {
     background-color: var(--dark-main-color);
@@ -384,6 +423,9 @@ header {
 
 .btn--cta {
     background-color: #a32727;
+    text-decoration: none;
+
+    transition: all 300ms;
 }
 
 .btn--cta:hover {
