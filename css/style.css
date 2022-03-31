@@ -389,3 +389,23 @@ header {
 .btn--cta:hover {
     background-color: #6f0d0d;
 }
+
+/* ------------------------------- Footer Section ------------------------------- */
+.footer-container {
+    text-align: center;
+}
+
+.footer-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+
+    margin-right: 1.2rem;
+
+    color: var(--dark-main-color);
+}
+
+.footer-container-copyright {
+    text-align: center;
+    color: var(--dark-grey-color);
+    font-size: 1.2rem;
+}
