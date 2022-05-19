@@ -1,13 +1,21 @@
 # Tindog
 
-My very first web development project.
+Landing page of a fictional company, that aims to find the perfect partner for your dog.
 
-This is a website created while taking part in The Complete 2022 Web Development Bootcamp
+My very first solo web development project inspired by The Complete 2022 Web Development Bootcamp.
 
-Firstly I created a Figma wireframe and a high-fidelity mockup. Then I got the coding itself.
+## Technologies
 
-Technologies used: (My first project)
-- HTML
-- CSS
-- Google
-- Visual Studio Code
+This simple site didn't require much technology so I used only the core basics.
+
+-   HTML
+-   CSS
+-   Basic JavaScript
+
+## What I learned
+
+This project was aimed at putting my already aquired skills in HTML, CSS and JavaScript to use. I learned how to work with the basic elements of the language and how to structure my code.
+
+## Biggest obstacle
+
+The hardest part of this project was setting up media queries and making my design responsive.
