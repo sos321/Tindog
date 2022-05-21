@@ -14,6 +14,8 @@ body {
     font-family: "Montserrat", sans-serif;
 
     overflow-x: hidden;
+
+    position: relative;
 }
 
 :root {
@@ -165,8 +167,6 @@ header {
 
     background-color: var(--lighter-main-color);
 
-    transform: translateX(100%);
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,11 +177,11 @@ header {
     pointer-events: none;
 
     z-index: 2;
+
+    transform: translateX(100%);
 }
 
 .active {
-    display: block;
-
     opacity: 1;
     transform: translateX(0);
 
