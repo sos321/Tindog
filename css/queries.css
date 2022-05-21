@@ -10,7 +10,9 @@
     .heart {
         display: none;
     }
+}
 
+@media (max-width: 1134px) {
     .container--cta {
         margin: 0 2rem;
     }
@@ -40,7 +42,6 @@
     }
 
     .plan-option {
-        /* TODO */
         min-width: 75%;
         height: 40rem;
     }
@@ -58,11 +59,23 @@
         gap: 2rem;
     }
 
+    .feature-text {
+        font-size: 2rem;
+    }
+
     .featured-in-image {
         width: 8rem;
     }
 
     .nav-main ul {
+        display: none;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+    }
+
+    .mobile-nav-btn ion-icon[name="close-outline"] {
         display: none;
     }
 }
