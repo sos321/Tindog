@@ -18,4 +18,4 @@ This project was aimed at putting my already aquired skills in HTML, CSS and Jav
 
 ## Biggest obstacle
 
-The hardest part of this project was setting up media queries and making my design responsive.
+The hardest part of this project was setting up media queries and making the mobile navigation.
